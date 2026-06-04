@@ -1,4 +1,4 @@
-# Structural Adapter Release Code
+# TOSA-HMD
 
 This directory contains the core implementation for the paper method on the Hateful Memes Challenge dataset with Qwen2-VL.
 
