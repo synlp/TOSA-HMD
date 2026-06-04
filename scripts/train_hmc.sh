@@ -1,0 +1,12 @@
+python src/train_hmc.py \
+  --data_json /path/to/hmc/all_data.json \
+  --image_dir /path/to/hmc \
+  --output_dir outputs/hmc_qwen2vl_structural_adapter \
+  --qwen_model_name Qwen/Qwen2-VL-2B-Instruct \
+  --clip_model_name openai/clip-vit-base-patch32 \
+  --learning_rate 1e-6 \
+  --per_device_train_batch_size 1 \
+  --gradient_accumulation_steps 32 \
+  --num_train_epochs 8 \
+  --bf16 \
+  --deepspeed configs/deepspeed_zero2.json
